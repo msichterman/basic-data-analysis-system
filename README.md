@@ -1,6 +1,3 @@
-# CSCE411-Assignment4-DataAnalysisWorkflow
-This assignment is intended to build the following skills: build a web-based interactive data analysis system and understand the three types of data modeling techniques for database design.
-
 # Build An End-to-End E-R Data Analysis Workflow
 ***Disclaimer: This repository is public to showcase skills developed from this assignment. I am in no way reponsible for any academic integrity issues should any code be re-used or copied from any part of this assignment.**
 
