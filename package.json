@@ -1,0 +1,29 @@
+{
+  "name": "csce411-assignment4-dataanalysisworkflow",
+  "version": "1.0.0",
+  "description": "RESTful API with Node.js, Express, and PostgreSQL for CSCE 411 Assignment 4",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/msichterman/CSCE411-Assignment4-DataAnalysisWorkflow.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/msichterman/CSCE411-Assignment4-DataAnalysisWorkflow/issues"
+  },
+  "homepage": "https://github.com/msichterman/CSCE411-Assignment4-DataAnalysisWorkflow#readme",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "connect-livereload": "^0.6.1",
+    "express": "^4.17.1",
+    "livereload": "^0.9.1",
+    "nodemon": "^2.0.3",
+    "pg": "^8.0.2"
+  }
+}

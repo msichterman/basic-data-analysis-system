@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+  <!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>CSCE 411 Assignment 5</title>
+    <meta
+      name="description"
+      content="A simple full-stack application intended to portray the an end-to-end E-R data analysis workflow."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
+    <h1>End-to-End E-R Data Analysis Workflow</h1>
+    <h2>Matt Sichterman & Anthony McIntosh</h2>
+    <h3>CSCE 411 - Assignment 4</h3>
+    <div class="button-grid">
+      <div class="row">
+        <button id="findAllNebraska">Find all users of Nebraska</button>
+        <button id="findAllSentMessages">
+          Find all users who sent messages between 8am-9am
+        </button>
+      </div>
+      <div class="row">
+        <button id="findAllSentMessagesNebraska">
+          Find all users who sent messages between 8am-9am from Nebraska
+        </button>
+        <button id="findMaxSentMessagesNebraska">
+          Find the user who sent the maximum number of messages between 8am-9am
+          from Nebraska
+        </button>
+      </div>
+    </div>
+    <div id="output-container">
+      <p id="output-title">Output of Selected Query:</h4>
+      <hr />
+      <p id="output">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam ab aspernatur explicabo architecto eos inventore, magnam ipsa maiores ullam consectetur, vero delectus at porro est molestias molestiae provident alias sunt.</p>
+    </div>
+
+    <script src="handleClick.js" async defer></script>
+  </body>
+</html>
