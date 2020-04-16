@@ -7,7 +7,7 @@ const connectLivereload = require("connect-livereload");
 const app = express();
 const port = 3000;
 
-// Live reload to allow for rapid development and hot reload ---------------
+// Live reload the front end to allow for rapid development and hot reload ---------------
 // Open livereload high port and start to watch client directory for changes
 const liveReloadServer = livereload.createServer();
 liveReloadServer.watch(path.join(__dirname, "client"));

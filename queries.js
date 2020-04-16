@@ -9,6 +9,7 @@ const pool = new Pool({
   port: 5432,
 });
 
+// First required query
 const getUsersNebraska = (request, response) => {
   pool.query("SELECT * FROM users ORDER BY id ASC", (error, results) => {
     if (error) {
@@ -18,6 +19,7 @@ const getUsersNebraska = (request, response) => {
   });
 };
 
+// Second required query
 const getUsersSent = (request, response) => {
   const id = parseInt(request.params.id);
 
@@ -29,6 +31,7 @@ const getUsersSent = (request, response) => {
   });
 };
 
+// Third required query
 const getUsersSentNebraska = (request, response) => {
   const id = parseInt(request.params.id);
 
@@ -40,6 +43,7 @@ const getUsersSentNebraska = (request, response) => {
   });
 };
 
+// Fourth requried query
 const getMaxSentNebraska = (request, response) => {
   const id = parseInt(request.params.id);
 

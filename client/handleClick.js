@@ -1,8 +1,8 @@
 const output = document.querySelector("#output");
 
+// On first button click, fetch the first query and output
 document.querySelector("#findAllNebraska").onclick = (event) => {
   console.log("Button 1 Clicked");
-  // An example of a query using the fetch API
   fetch("/users-nebraska")
     .then((response) => {
       return response.json();
@@ -13,9 +13,9 @@ document.querySelector("#findAllNebraska").onclick = (event) => {
     .catch((err) => console.error(err));
 };
 
+// On second button click, fetch the second query and output
 document.querySelector("#findAllSentMessages").onclick = (event) => {
   console.log("Button 2 Clicked");
-  // An example of a query using the fetch API
   fetch("/users-sent")
     .then((response) => {
       return response.json();
@@ -26,9 +26,9 @@ document.querySelector("#findAllSentMessages").onclick = (event) => {
     .catch((err) => console.error(err));
 };
 
+// On third button click, fetch the third query and output
 document.querySelector("#findAllSentMessagesNebraska").onclick = (event) => {
   console.log("Button 3 Clicked");
-  // An example of a query using the fetch API
   fetch("/users-sent-nebraska")
     .then((response) => {
       return response.json();
@@ -39,9 +39,9 @@ document.querySelector("#findAllSentMessagesNebraska").onclick = (event) => {
     .catch((err) => console.error(err));
 };
 
+// On fourth button click, fetch the fourth query and output
 document.querySelector("#findMaxSentMessagesNebraska").onclick = (event) => {
   console.log("Button 4 Clicked");
-  // An example of a query using the fetch API
   fetch("/user-max-sent-nebraska")
     .then((response) => {
       return response.json();
