@@ -30,7 +30,7 @@ In order to use the application locally, you'll need to do a few things first.
 
 1. Clone this repository and `cd` into the repository's directory
 ```
-git clone https://github.com/msichterman/auth-and-privileges.git && cd ./auth-and-privileges
+git clone https://github.com/msichterman/CSCE411-Assignment4-DataAnalysisWorkflow.git && cd ./CSCE411-Assignment4-DataAnalysisWorkflow
 ```
 
 2. Install all of the `node_modules` required for the project. Depending on your computer's configuration, you may need to prefix this command with a `sudo`.
