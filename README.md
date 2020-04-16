@@ -32,17 +32,17 @@ git clone https://github.com/msichterman/CSCE411-Assignment4-DataAnalysisWorkflo
 
 2. Install all of the `node_modules` required for the project. Depending on your computer's configuration, you may need to prefix this command with a `sudo`.
 ```
-npm install && npm run client-install
+npm install
 ```
 or
 ```
-sudo npm install && sudo npm run client-install
+sudo npm install
 ```
 
 3. Lastly, run the following command to get the project off the ground. This command will not only build your JS files, but it will also auto-compile your files on every file save. This allows for hot reloading on-save when the backend and/or frontend code is updated.
 
 ```
-npm run dev
+npm run server
 ```
 
 4. Head over to [http://localhost:3000](http://localhost:3000) to see the application live!
