@@ -10,6 +10,8 @@ This site was created to satisfy the requirements of an assignment in my `CSCE 4
 In real-world settings, a dataset may not be directly used with a relational database management system (RDBMS). Different datasets can be provided with different formats(e.g., text, binary, images, and so on). In order to use these datasets in RDBMS, data processing and modeling techniques are typically required. In this assignment, we were provided with a dataset in a zip archive file, and after decompression there were about 2,000 data files, named from record_000000.datto to record_001999.dat. Each data file corresponds to a synthesized record containing User ID, User Name, User Location, Number of Messages, and Message information (Send Time and Send Text) in a binary format. After processing these datasets, we were instructed to conceptually, logically, and physically model the data. From there, we added the data to a PostgreSQL database and created a web interface that displays the results of four required database queries.
 
 ## Technologies
+### Data Preprocessing
+* C
 ### Back-End
 * Node.js
     * [Express.js](https://expressjs.com/)
@@ -46,6 +48,23 @@ npm run server
 ```
 
 4. Head over to [http://localhost:3000](http://localhost:3000) to see the application live!
+
+## Data Preprocessing
+The data for this assignment was provided in a zip archive file (Assignment4_Dataset_Code.zip). After decompression, there are about 2,000 data files, named from record_000000.dat to record_001999.dat. Each data file corresponds to a synthesized record containing User ID, User Name, User Location, Number of Messages, and Message information (Send Time and Send Text) in a binary format. In order to import this data, we had to preprocess it into .csv files, where each file represents a table in our database, namely ```user``` and ```message```. We were given a few C language files as the code stubs for the assignment and the files were able to read in the data from the binary files and print the data from each file. We extending this functionality by creating the .csv files and adding the necessary information from each. These files could then be imported into our PostgreSQL database. These are the steps to run the preprocessing code:
+1. ```cd``` into the ```Assignment4_Dataset_Code``` folder.
+* ```cd Assignment4_Dataset_Code```
+
+2. A makefile was generated in order to simplify the build process:
+* ```make read_record``` - builds the ```read_record``` executable which prints the contents of a specified record.
+   * ```./read_record <record_number>``` - For example, running ```./read_record 999``` will print the record of User ID: 999. The program also shows the processing time at the end of its output.
+* ```make process_record``` - builds the ```process_record``` executable which we modified to generate the .csv files for each of our tables given a range of records.
+   * ```./process_record <start_record_number> <end_record_number>``` - For example, running ```./process_record 14 223``` simply goes through all records from 14 to 223 and generates the .csv files.
+* ```make distclean``` - removes the exectutables from the directory
+
+3. Process all records from 0 to 1999 to generate the .csv files for our user and message tables.
+* ```make process_record && ./process_record 0 1999```
+
+4. The .csv files are generated and ready to be imported to PostgresSQL
 
 ## Get In Touch
 * Follow me on [Twitter](https://twitter.com/mattsichterman)
