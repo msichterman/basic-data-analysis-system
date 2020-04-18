@@ -20,7 +20,6 @@ In real-world settings, a dataset may not be directly used with a relational dat
     * [pgAdmin 4](https://www.pgadmin.org/download/)
 ### Front-End
 * JavaScript
-    * [React](https://reactjs.org/)
 * HTML
 * CSS
 
