@@ -37,7 +37,7 @@ int main(int argc, char **argv)
 
     message_csv = fopen(message_filename, "w+");
 
-    fprintf(message_csv, "Send Time, Send Text, User ID");
+    fprintf(message_csv, "Message ID, Send Time, Send Text, User ID");
 
     // ------------------------------------------------------
 
@@ -48,6 +48,8 @@ int main(int argc, char **argv)
 
     /* start time */
     gettimeofday(&time_start, NULL);
+
+    int message_id = 0;
 
     for (i = first_record_id; i <= last_record_id; i++)
     {
@@ -102,8 +104,9 @@ int main(int argc, char **argv)
             message_text[strlen(message_text) - 1] = '\0';
 
             // Add the message to the csv with the message time, text, and user id
-            fprintf(message_csv, "\n%02d-%02d-%04d %02d:%02d, \"%s\", %d", message->month, message->day,
+            fprintf(message_csv, "\n%d, %02d-%02d-%04d %02d:%02d, \"%s\", %d", message_id, message->month, message->day,
                     message->year, message->hour, message->minute, message_text, id);
+            message_id += 1;
         }
 
         // print_record(rp);
