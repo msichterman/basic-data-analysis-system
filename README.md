@@ -89,7 +89,7 @@ PostgreSQL is installed now, so the next step is to connect to the postgres comm
 
 ### Importing the Database with the PostgreSQL Command Prompt
 1. Start PostgreSQL using the command ```psql```
-2. Create a new database called ```assignment4``` using the command ```CREATE DATABASE assignment4```
+2. Create a new database called ```assignment4``` using the command ```CREATE DATABASE assignment4;```
 3. Connect to the created database using the command ```\c assignment4```
 4. Insert the contents of the ```Assignment4Dump.sql``` file into the new database using the command ```\i ./Assignment4Dump.sql```
    * **Note:** This may take a few minutes since there are over 98,000 message records
