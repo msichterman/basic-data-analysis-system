@@ -66,6 +66,35 @@ The data for this assignment was provided in a zip archive file (Assignment4_Dat
 
 4. The .csv files are generated and ready to be imported to PostgresSQL
 
+## Importing Assignment4Dump.sql to Create the Database
+### Installation
+If you’re using Windows, download a [Windows installer](https://www.postgresql.org/download/windows/) of PostgreSQL.
+
+If you’re using a Mac, this tutorial assumes you have [Homebrew](https://brew.sh/) installed on your computer as a package manager for installing new programs. If you don’t, simply click on the link and follow the instructions to install Homebrew.
+
+Open up the Terminal and install ```postgresql``` with ```brew```.
+```
+brew install postgresql
+```
+After the installation is complete, we’ll want to get the ```postgresql``` up and running, which we can do with ```services start```.
+```
+brew services start postgresql
+==> Successfully started `postgresql` (label: homebrew.mxcl.postgresql)
+```
+If at any point you want to stop the ```postgresql``` service, you can run ```brew services stop postgresql```.
+
+PostgreSQL is installed now, so the next step is to connect to the postgres command line, where we can run SQL commands to import the database.
+
+**Note:** This installation guide was found [here](https://blog.logrocket.com/setting-up-a-restful-api-with-node-js-and-postgresql-d96d6fc892d8/), much thanks to the [author](http://tania.dev).
+
+### Importing the Database with the PostgreSQL Command Prompt
+1. Start PostgreSQL using the command ```psql```
+2. Create a new database called ```assignment4``` using the command ```CREATE DATABASE assignment4```
+3. Connect to the created database using the command ```\c assignment4```
+4. Insert the contents of the ```Assignment4Dump.sql``` file into the new database using the command ```\i ./Assignment4Dump.sql```
+   * **Note:** This may take a few minutes since there are over 98,000 message records
+5. Now the database should be populated and running, head over to the web application to see the queries in action
+
 ## Get In Touch
 * Follow me on [Twitter](https://twitter.com/mattsichterman)
 * Connect with me on [LinkedIn](https://www.linkedin.com/in/msichterman/)
