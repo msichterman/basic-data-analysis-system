@@ -91,7 +91,10 @@ PostgreSQL is installed now, so the next step is to connect to the postgres comm
 1. Start PostgreSQL using the command ```psql```
 2. Create a new database called ```assignment4``` using the command ```CREATE DATABASE assignment4;```
 3. Connect to the created database using the command ```\c assignment4```
-4. Insert the contents of the ```Assignment4Dump.sql``` file into the new database using the command ```\i ./Assignment4Dump.sql```
+4. Insert the contents of the ```Assignment4CompleteDump.sql``` file into the new database using the command:
+```
+\i /<PATH TO LOCAL REPO>/CSCE411-Assignment4-DataAnalysisWorkflow/Assignment4_Dataset_Code/Assignment4CompleteDump.sql
+```
    * **Note:** This may take a few minutes since there are over 98,000 message records
 5. Now the database should be populated and running, head over to the web application to see the queries in action
 
