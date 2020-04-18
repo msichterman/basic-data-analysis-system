@@ -44,7 +44,7 @@ sudo npm install
 3. Lastly, run the following command to get the project off the ground. This command will not only build your JS files, but it will also auto-compile your files on every file save. This allows for hot reloading on-save when the backend and/or frontend code is updated.
 
 ```
-npm run server
+npm run start
 ```
 
 4. Head over to [http://localhost:3000](http://localhost:3000) to see the application live!
