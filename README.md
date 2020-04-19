@@ -67,7 +67,7 @@ The data for this assignment was provided in a zip archive file (Assignment4_Dat
 
 4. The .csv files are generated and ready to be imported to PostgresSQL
 
-## Importing Assignment4Dump.sql to Create the Database
+## Importing Assignment4CompleteDump.sql to Create the Database
 ### Installation
 If you’re using Windows, download a [Windows installer](https://www.postgresql.org/download/windows/) of PostgreSQL.
 
