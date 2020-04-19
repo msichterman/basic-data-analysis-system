@@ -9,6 +9,8 @@ This site was created to satisfy the requirements of an assignment in my `CSCE 4
 
 In real-world settings, a dataset may not be directly used with a relational database management system (RDBMS). Different datasets can be provided with different formats(e.g., text, binary, images, and so on). In order to use these datasets in RDBMS, data processing and modeling techniques are typically required. In this assignment, we were provided with a dataset in a zip archive file, and after decompression there were about 2,000 data files, named from record_000000.datto to record_001999.dat. Each data file corresponds to a synthesized record containing User ID, User Name, User Location, Number of Messages, and Message information (Send Time and Send Text) in a binary format. After processing these datasets, we were instructed to conceptually, logically, and physically model the data. From there, we added the data to a PostgreSQL database and created a web interface that displays the results of four required database queries.
 
+![](End-to-EndAppDemo.gif)
+
 ## Technologies
 ### Data Preprocessing
 * C
@@ -49,7 +51,7 @@ npm run start
 4. Head over to [http://localhost:3000](http://localhost:3000) to see the application live!
 
 ## Data Preprocessing
-The data for this assignment was provided in a zip archive file (Assignment4_Dataset_Code.zip). After decompression, there are about 2,000 data files, named from record_000000.dat to record_001999.dat. Each data file corresponds to a synthesized record containing User ID, User Name, User Location, Number of Messages, and Message information (Send Time and Send Text) in a binary format. In order to import this data, we had to preprocess it into .csv files, where each file represents a table in our database, namely ```user``` and ```message```. We were given a few C language files as the code stubs for the assignment and the files were able to read in the data from the binary files and print the data from each file. We extending this functionality by creating the .csv files and adding the necessary information from each. These files could then be imported into our PostgreSQL database. These are the steps to run the preprocessing code:
+The data for this assignment was provided in a zip archive file (Assignment4_Dataset_Code.zip). After decompression, there are about 2,000 data files, named from record_000000.dat to record_001999.dat. Each data file corresponds to a synthesized record containing User ID, User Name, User Location, Number of Messages, and Message information (Send Time and Send Text) in a binary format. In order to import this data, we had to preprocess it into .csv files, where each file represents a table in our database, namely ```user``` and ```message```. We were given a few C language files as the code stubs for the assignment and the files were able to read in the data from the binary files and print the data from each file. We extended this functionality by creating the .csv files and adding the necessary information to each. These files could then be imported into our PostgreSQL database. These are the steps to run the preprocessing code:
 1. ```cd``` into the ```Assignment4_Dataset_Code``` folder.
 * ```cd Assignment4_Dataset_Code```
 
