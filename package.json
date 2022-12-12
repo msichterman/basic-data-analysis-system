@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/msichterman/CSCE411-Assignment4-DataAnalysisWorkflow#readme",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "pg": "^8.0.2"
   }
 }
